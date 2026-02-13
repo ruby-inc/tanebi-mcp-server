@@ -1,5 +1,5 @@
 {
-  "name": "tanebi-mcp-server",
+  "name": "@rubyjobs-jp/tanebi-mcp-server",
   "version": "1.0.0",
   "description": "MCP server for Tanebi API - list, get, and create ideas",
   "type": "module",
