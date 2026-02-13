@@ -83,6 +83,7 @@ interface IdeaLine {
   line_type: string;
   content: string;
   position: number;
+  comments_count: number;
   created_at: string;
   updated_at: string;
 }
@@ -149,7 +150,8 @@ function formatIdeaDetail(idea: IdeaDetail): string {
           .sort((a, b) => a.position - b.position)
           .map((line) => {
             const prefix = line.line_type === "heading" ? "### " : "";
-            return `${prefix}${line.content}`;
+            const commentTag = line.comments_count > 0 ? ` [${line.comments_count} comments]` : "";
+            return `${prefix}${line.content}${commentTag}`;
           })
           .join("\n\n")
       : "\n\n(No content yet)";
