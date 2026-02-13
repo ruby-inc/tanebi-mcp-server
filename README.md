@@ -16,7 +16,7 @@ npm run build
 | 変数名 | 必須 | 説明 |
 |--------|------|------|
 | `TANEBI_API_KEY` | Yes | Tanebi iOS アプリの設定画面から発行した API Key |
-| `TANEBI_API_BASE_URL` | No | API のベース URL（デフォルト: `http://localhost:3000`） |
+| `TANEBI_API_BASE_URL` | No | API のベース URL（デフォルト: `https://tanebi.app`） |
 
 ## 提供ツール
 
