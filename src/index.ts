@@ -9,7 +9,7 @@ import { z } from "zod";
 const API_KEY = process.env.TANEBI_API_KEY;
 const API_BASE_URL =
   process.env.TANEBI_API_BASE_URL?.replace(/\/+$/, "") ||
-  "http://localhost:3000";
+  "https://tanebi.app";
 
 if (!API_KEY) {
   console.error(
